@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JPWijerathne</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            position: relative;
+        }
+        .navbar {
+            background-color: antiquewhite;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .hero {
+            background: #ff071bd2;
+            padding: 50px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            animation: fadeInDown 2s;
+        }
+        .hero p {
+            font-size: 1.2em;  
+            animation: fadeInUp 2s;
+        }
+        .footer {
+            background: #212529;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .social-icons {
+            margin-top: 10px;
+        }
+        .social-icons a {
+            color: white;
+            margin: 0 10px;
+            font-size: 1.5em;
+        }
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2em;
+            }
+            .hero p {
+                font-size: 1em;
+            }
+        }
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .watermark {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0.2;
+            z-index: -1;
+        }
+        .carousel-inner img {
+            width: 800px; /* Adjust width */
+            height: 400px; /* Adjust height */
+            margin: 0 auto;
+        }
+        .product-carousel .carousel-item img {
+            width: 200px;
+            height: 200px;
+            display: block;
+            margin: 0 auto;
+        }
+        .product-carousel .carousel-item .description {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .product-carousel .carousel-item-more {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="container">
+            <h1>J.P.Wijerathne (Pvt) Ltd</h1>
+            <p>"Quality Fiber Materials for Every Industry, Delivered with Excellence"</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+            <img src="img/logo.png" alt="Logo" style="height: 70px; width: 90px; margin-right: 10px;">
+            J.P.Wijerathne (Pvt) Ltd
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="product.html">Products</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Product Image Slider -->
+    <div id="productCarousel" class="carousel slide product-carousel" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/image1.jpeg" class="d-block" alt="Product 1">
+                <div class="description">Product 1 Description Lorem, ipsum dolor sit amet consectetur adipi</div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/image2.jpeg" class="d-block" alt="Product 2">
+                <div class="description">Product 2 Description Lorem, ipsum dolor sit amet consectetur adipi</div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/image3.jpeg" class="d-block" alt="Product 3">
+                <div class="description">Product 3 Description Lorem, ipsum dolor sit amet consectetur adipi</div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/product4.jpg" class="d-block" alt="Product 4">
+                <div class="description">Product 4 Description</div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/product5.jpg" class="d-block" alt="Product 5">
+                <div class="description">Product 5 Description</div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/product6.jpg" class="d-block" alt="Product 6">
+                <div class="description">Product 6 Description</div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/product7.jpg" class="d-block" alt="Product 7">
+                <div class="description">Product 7 Description</div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/product8.jpg" class="d-block" alt="Product 8">
+                <div class="description">Product 8 Description</div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/product9.jpg" class="d-block" alt="Product 9">
+                <div class="description">Product 9 Description</div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/product10.jpg" class="d-block" alt="Product 10">
+                <div class="description">Product 10 Description</div>
+            </div>
+            <div class="carousel-item carousel-item-more">
+                <a href="product.html" class="btn btn-primary">More Products</a>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#productCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#productCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <br>
+    <br><center><p>J.P.Wijerathne (Pvt) Ltd is a premier importer and distributor specializing in chemicals, <br>fiber materials, resins, mats, and glues. <br> With multiple branches strategically located to serve various regions, we are committed to providing our clients with the highest quality products at competitive prices. <br>As a trusted partner in the industry, we have established a reputation for reliability and excellence. <br> Our extensive portfolio of satisfied customers spans numerous sectors, underscoring our dedication to exceptional service and product quality. <br>At J.P.Wijerathne (Pvt) Ltd, we believe in forging strong relationships with our clients by understanding their unique needs and delivering tailored solutions. <br> Our team of experts works diligently to source and supply materials that meet the highest standards of performance and safety. <br>We take pride in our role as a key player in the market, consistently meeting the evolving demands of our customers with efficiency and professionalism. <br>By prioritizing customer satisfaction and maintaining a robust distribution network, <br>we ensure that our products are readily available to support the success of our clients’ businesses. <br>Choose J.P.Wijerathne (Pvt) Ltd as your preferred supplier and experience the benefits of working with a company that values quality, affordability, and outstanding customer service.
+    </p></center>
+    <br>
+    <br>
+
+    <!-- Old Image Slider -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/image1.jpeg" class="d-block w-100" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img src="img/image2.jpeg" class="d-block w-100" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <img src="img/image3.jpeg" class="d-block w-100" alt="Third slide">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <!-- Watermark Logo -->
+    <img src="img/logo.png" alt="Watermark Logo" class="watermark">
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <p>&copy; 2024 J.P Wijerathne (Pvt) Ltd. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <h6>< Web site developed by M3inova ></h6>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
